@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Focus Tube - Stay Productive on YouTube</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.11.0/dist/gsap.min.js"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    .gradient-bg {
+      background: linear-gradient(to right, #a8e6cf, #dcedc1);
+    }
+
+    .card-shadow {
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .theme-light-green {
+      background-color: #e6f9ec;
+    }
+
+    .theme-dark-green {
+      background-color: #37966f;
+    }
+
+    .theme-accent {
+      background-color: #ffe0e0;
+    }
+
+    .icon-style {
+      font-size: 36px;
+      color: #37966f;
+    }
+
+    .section-title {
+      color: #37966f;
+    }
+
+    .btn-primary {
+      background-color: #37966f;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background-color: #2f7a5d;
+    }
+  </style>
+</head>
+
+<body class="bg-white text-gray-800">
+
+  <!-- Header -->
+  <header class="gradient-bg text-white p-6 sticky top-0 z-50 shadow-md">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-xl font-bold">Focus Tube</h1>
+      <nav class="space-x-6 hidden md:flex">
+        <a href="#features" class="hover:underline">Features</a>
+        <a href="#how" class="hover:underline">How It Works</a>
+        <a href="#screenshots" class="hover:underline">Screenshots</a>
+        <a href="#about" class="hover:underline">About</a>
+        <a href="#testimonials" class="hover:underline">Testimonials</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="gradient-bg text-white py-20" id="hero">
+    <div class="container mx-auto flex flex-col md:flex-row items-center gap-10">
+      <div class="md:w-1/2 text-center md:text-left" data-aos="fade-right">
+        <h2 class="text-4xl font-bold mb-4">Stay Focused While Studying on YouTube</h2>
+        <p class="mb-6 text-lg">AI keeps distractions away and helps track your study goals in real time.</p>
+        <a href="#" class="btn-primary px-6 py-3 rounded shadow-lg font-semibold transition">Download Extension</a>
+      </div>
+      <div class="md:w-1/2" data-aos="fade-left">
+        <img src="https://undraw.co/api/illustrations/163f5e40-1e04-4c38-a01c-ec180875d29e" alt="Extension Demo" class="rounded-lg shadow-lg">
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="py-16 theme-light-green" id="how">
+    <div class="container mx-auto text-center mb-10" data-aos="fade-up">
+      <h3 class="text-3xl font-bold section-title mb-4">How It Works</h3>
+      <p class="text-gray-700">Your session stays productive in 3 simple steps.</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-8 container mx-auto" data-aos="fade-up">
+      <div class="p-6 bg-white card-shadow rounded-xl text-center">
+        <span class="material-icons icon-style">flag</span>
+        <h4 class="font-semibold text-lg mb-2 mt-3">1. Set Your Goal</h4>
+        <p>Define what you're learning (e.g., “Study Math”).</p>
+      </div>
+      <div class="p-6 bg-white card-shadow rounded-xl text-center">
+        <span class="material-icons icon-style">psychology</span>
+        <h4 class="font-semibold text-lg mb-2 mt-3">2. AI Scoring</h4>
+        <p>We check YouTube content and score its relevance to your goal.</p>
+      </div>
+      <div class="p-6 bg-white card-shadow rounded-xl text-center">
+        <span class="material-icons icon-style">track_changes</span>
+        <h4 class="font-semibold text-lg mb-2 mt-3">3. Visual Feedback</h4>
+        <p>Green = focused, Red = distracted. Get visual cues instantly.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="py-16 bg-white" id="features">
+    <div class="container mx-auto text-center mb-10" data-aos="fade-up">
+      <h3 class="text-3xl font-bold section-title mb-4">Key Features</h3>
+    </div>
+    <div class="grid md:grid-cols-4 gap-8 container mx-auto" data-aos="fade-up">
+      <div class="p-6 theme-accent rounded-lg shadow text-center">
+        <span class="material-icons icon-style">playlist_add_check</span>
+        <p class="font-semibold mt-2">Set Learning Goals</p>
+      </div>
+      <div class="p-6 theme-accent rounded-lg shadow text-center">
+        <span class="material-icons icon-style">memory</span>
+        <p class="font-semibold mt-2">AI Video Scoring</p>
+      </div>
+      <div class="p-6 theme-accent rounded-lg shadow text-center">
+        <span class="material-icons icon-style">insights</span>
+        <p class="font-semibold mt-2">Visual Feedback</p>
+      </div>
+      <div class="p-6 theme-accent rounded-lg shadow text-center">
+        <span class="material-icons icon-style">emoji_emotions</span>
+        <p class="font-semibold mt-2">Motivational Boosts</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Screenshots Carousel -->
+  <section class="py-16 bg-gray-50" id="screenshots">
+    <div class="container mx-auto text-center mb-10" data-aos="fade-up">
+      <h3 class="text-3xl font-bold section-title mb-4">Screenshots</h3>
+      <p class="text-gray-600">Take a peek at Focus Tube in action!</p>
+    </div>
+    <div class="flex overflow-x-auto space-x-6 px-4" data-aos="fade-up">
+      <img src="https://via.placeholder.com/400x250" class="rounded-lg shadow-lg" alt="screenshot1">
+      <img src="https://via.placeholder.com/400x250" class="rounded-lg shadow-lg" alt="screenshot2">
+      <img src="https://via.placeholder.com/400x250" class="rounded-lg shadow-lg" alt="screenshot3">
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-16 theme-light-green" id="testimonials">
+    <div class="container mx-auto text-center mb-10" data-aos="fade-up">
+      <h3 class="text-3xl font-bold section-title mb-4">What Users Say</h3>
+    </div>
+    <div class="grid md:grid-cols-2 gap-8 container mx-auto" data-aos="fade-up">
+      <div class="bg-white p-6 rounded-lg shadow text-left">
+        <p class="text-gray-700 italic">“Focus Tube completely changed how I use YouTube. I stay focused and learn more!”</p>
+        <h5 class="font-semibold mt-3 text-green-700">— Priya S., Student</h5>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow text-left">
+        <p class="text-gray-700 italic">“It’s like having a study coach inside your browser. Brilliant idea!”</p>
+        <h5 class="font-semibold mt-3 text-green-700">— Aarav M., Learner</h5>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="py-16 bg-white" id="about">
+    <div class="container mx-auto text-center" data-aos="fade-up">
+      <h3 class="text-3xl font-bold section-title mb-4">About Us</h3>
+      <p class="max-w-3xl mx-auto text-gray-700 text-lg">Focus Tube was created to help students and lifelong learners stay on track while using YouTube. Our AI ensures that every video supports your goal — and our feedback system makes your sessions productive and engaging.</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="py-16 bg-gray-100" id="contact">
+    <div class="container mx-auto text-center" data-aos="fade-up">
+      <h3 class="text-3xl font-bold section-title mb-4">Get in Touch</h3>
+      <form method="POST" action="contact.php" class="max-w-xl mx-auto mt-6 bg-white p-6 rounded-lg shadow space-y-4">
+        <input type="text" name="name" placeholder="Your Name" required class="w-full px-4 py-2 border border-gray-300 rounded" />
+        <input type="email" name="email" placeholder="Your Email" required class="w-full px-4 py-2 border border-gray-300 rounded" />
+        <textarea name="message" placeholder="Your Message" rows="5" required class="w-full px-4 py-2 border border-gray-300 rounded"></textarea>
+        <button type="submit" class="btn-primary px-6 py-2 rounded font-semibold w-full">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    gsap.from("#hero h2", { duration: 1.2, y: -50, opacity: 0 });
+    gsap.from("#hero p", { duration: 1.2, delay: 0.5, y: 50, opacity: 0 });
+  </script>
+</body>
+
+</html>
